@@ -4,14 +4,18 @@ namespace Aletschhorn.DigitalEstateApp.Views;
 
 public partial class CarDetailsPage : ContentPage
 {
+    private readonly CarDetailsViewModel carDetailsViewModel;
+
     public CarDetailsPage(CarDetailsViewModel carDetailsViewModel)
     {
         InitializeComponent();
         BindingContext = carDetailsViewModel;
+        this.carDetailsViewModel = carDetailsViewModel;
     }
 
-    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    protected override async void OnAppearing()
     {
-        base.OnNavigatedTo(args);
+        base.OnAppearing();
+        await carDetailsViewModel.GetCarData();
     }
 }

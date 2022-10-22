@@ -1,15 +1,18 @@
-﻿using Aletschhorn.DigitalEstateApp.Services;
+﻿using Aletschhorn.DigitalEstateApp.Models;
+using Aletschhorn.DigitalEstateApp.Services;
 
 namespace Aletschhorn.DigitalEstateApp;
 
 public partial class App : Application
 {
-	public static CarService CarService { get; private set; }
-	public App(CarService carService)
+    public static UserInfo UserInfo;
+
+    public static CarDatabaseService CarDatabaseService { get; private set; }
+    public App(CarDatabaseService carDatabaseService)
 	{
 		InitializeComponent();
 
 		MainPage = new AppShell();
-		CarService = carService;
+        CarDatabaseService = carDatabaseService;
     }
 }

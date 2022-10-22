@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aletschhorn.DigitalEstateApp", "Aletschhorn.DigitalEstateApp\Aletschhorn.DigitalEstateApp.csproj", "{F19C440C-E65D-4D11-B0A3-F59BD3DDFCF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aletschhorn.DigitalEstateApi", "Aletschhorn.DigitalEstateApi\Aletschhorn.DigitalEstateApi.csproj", "{EFFA69F6-0207-4A95-98CB-BD909EF93D3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{F19C440C-E65D-4D11-B0A3-F59BD3DDFCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F19C440C-E65D-4D11-B0A3-F59BD3DDFCF6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F19C440C-E65D-4D11-B0A3-F59BD3DDFCF6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EFFA69F6-0207-4A95-98CB-BD909EF93D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFA69F6-0207-4A95-98CB-BD909EF93D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFA69F6-0207-4A95-98CB-BD909EF93D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFA69F6-0207-4A95-98CB-BD909EF93D3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
